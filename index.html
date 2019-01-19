@@ -16,37 +16,43 @@
 
   <section class="gameType">
     <div class="gameTypeButtons">
-      <div class="gameType1">
-        <input type="radio" id="PvP" value="2P" checked>
+      <div class="typeRadio">
+        <input type="radio" id="PvP" name="gameType" value="2P" class="radioInfo" checked>
         <label for="PvP">Player vs Player</label>
       </div>
-      <div class="gameType2">
-        <input type="radio" id="PvC" value="1P">
+      <div class="typeRadio">
+        <input type="radio" id="PvC" name="gameType" value="1P" class="radioInfo">
         <label for="PvC">Player vs Computer</label>
       </div>
     </div>
   </section>
 
+  <section id="playerTurn">Player X you're up!</section>
+
   <section class="gameBoard">
     <div class="row">
-      <div class="squares top left" id="0--0"></div>
-      <div class="squares top center" id="0--1"></div>
-      <div class="squares top right" id="0--2"></div>
+      <div class="square top left" id="0--0"></div>
+      <div class="square top center" id="0--1"></div>
+      <div class="square top right" id="0--2"></div>
     </div>
     <div class="row">
-      <div class="squares middle left" id="1--0"></div>
-      <div class="squares middle center" id="1--1"></div>
-      <div class="squares middle right" id="1--2"></div>
+      <div class="square middle left" id="1--0"></div>
+      <div class="square middle center" id="1--1"></div>
+      <div class="square middle right" id="1--2"></div>
     </div>
     <div class="row">
-      <div class="squares bottom left" id="2--0"></div>
-      <div class="squares bottom center" id="2--1"></div>
-      <div class="squares bottom right" id="2--2"></div>
+      <div class="square bottom left" id="2--0"></div>
+      <div class="square bottom center" id="2--1"></div>
+      <div class="square bottom right" id="2--2"></div>
     </div>
   </section>
 
   <footer></footer>
 
+  <script src="scripts/resetGame.js"></script>
+  <script src="scripts/checkWin.js"></script>
+  <script src="scripts/PvC.js"></script>
+  <script src="scripts/PvP.js"></script>
   <script src="scripts/scripts.js"></script>
 </body>
 
