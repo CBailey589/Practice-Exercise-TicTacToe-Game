@@ -20,7 +20,7 @@ const playerVsPlayer = () => {
                         sCO[keyForSquaresClickedOnArray] = player1Symbol
                         console.log(sCO);
                         // changes the announcement above the board
-                        document.querySelector('#playerTurn').innerHTML = "Player O you're up";
+                        document.querySelector('#playerTurn').innerHTML = "Player O you're up!";
                         // changes the player
                         player = 2;
                         // sees if game is over
@@ -31,7 +31,7 @@ const playerVsPlayer = () => {
                         thisSquare.innerHTML = player2Symbol;
                         sCO[keyForSquaresClickedOnArray] = player2Symbol
                         console.log(sCO);
-                        document.querySelector('#playerTurn').innerHTML = "Player X you're up";
+                        document.querySelector('#playerTurn').innerHTML = "Player X you're up!";
                         player = 1;
                         checkWin();
                     }

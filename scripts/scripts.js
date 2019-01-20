@@ -21,7 +21,7 @@ for (button of allRadios) {
         (event) => {
             if (event.target.id === "PvP") {
                 playerVsPlayer();
-            } else {
+            } else if (event.target.id === "PvC") {
                 playerVsComputer();
             }
         }
