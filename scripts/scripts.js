@@ -20,8 +20,12 @@ for (button of allRadios) {
         "click",
         (event) => {
             if (event.target.id === "PvP") {
+                resetGame();
+                clearEventListeners();
                 playerVsPlayer();
             } else if (event.target.id === "PvC") {
+                resetGame();
+                clearEventListeners();
                 playerVsComputer();
             }
         }
