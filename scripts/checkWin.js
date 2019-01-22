@@ -8,7 +8,6 @@ function areEqual() {
     return true;
 }
 
-
 // creates a reusable function to display a winner alert and reset the game
 // ***Player 1 & 2 are switched here, because the player gets switched by playervsplayer() BEFORE the game checks to see if anyone won. 
 const winMessage = () => {

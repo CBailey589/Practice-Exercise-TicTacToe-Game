@@ -1,6 +1,5 @@
 // makes array of both game types
 const allRadios = document.querySelectorAll(".radioInfo")
-console.log(allRadios);
 
 // makes an object to hold the address/value for all 9 squares
 const gameSquares = document.querySelectorAll(".square")
@@ -9,10 +8,14 @@ const sCO = {};
 
 // sets player 1 as default player
 let player = 1;
+
+// sets default game type to PVP
+let gameType = "PvP";
+
 const player1Symbol = "X";
 const player2Symbol = "O";
 
-playerVsPlayer();
+makeEventListeners();
 
 // checks to see what game tpe the user picks
 for (button of allRadios) {
@@ -20,13 +23,15 @@ for (button of allRadios) {
         "click",
         (event) => {
             if (event.target.id === "PvP") {
+                gameType = "PvP"
                 resetGame();
                 clearEventListeners();
-                playerVsPlayer();
+                makeEventListeners();
             } else if (event.target.id === "PvC") {
+                gameType = "PvC"
                 resetGame();
                 clearEventListeners();
-                playerVsComputer();
+                makeEventListeners();
             }
         }
     )
