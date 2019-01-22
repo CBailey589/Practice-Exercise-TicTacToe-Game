@@ -56,11 +56,12 @@ h1 {
 }
 
 #playerTurn {
-    border: 2px solid burlywood;
+    /* border: 2px solid burlywood; */
     display: flex;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
+    margin-bottom: 30px;
     height: 5%;
     width: 60%;
 }
