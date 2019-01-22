@@ -28,6 +28,7 @@ header {
     align-items: center;
     height: 15%;
     width: 60%;
+    color: rgb(22, 22, 68);
 }
 
 h1 {
@@ -35,6 +36,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 5em;
+    color: rgb(22, 22, 68);
 }
 
 .gameType {
@@ -53,6 +55,7 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     width: 100%;
+    color: rgb(22, 22, 68);
 }
 
 #playerTurn {
@@ -64,6 +67,7 @@ h1 {
     margin-bottom: 30px;
     height: 5%;
     width: 60%;
+    color: rgb(22, 22, 68);
 }
 
 .gameBoard {
@@ -95,17 +99,17 @@ h1 {
 }
 
 .top, .middle {
-    border-bottom: 5px solid black;
+    border-bottom: 8px solid rgb(22, 22, 68);
 }
 
 .left, .center {
-    border-right: 5px solid black;
+    border-right: 8px solid rgb(22, 22, 68);
 }
 
 .X {
-    color: blue;
+    color: rgba(0, 0, 143, 0.7);
 }
 
 .O {
-    color: red;
+    color: rgba(143, 0, 0, 0.7);
 }
